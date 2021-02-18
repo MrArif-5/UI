@@ -1,0 +1,424 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAE9DA2C-EB01-4DCB-9DEE-D32CD71E927B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FMSApp</RootNamespace>
+    <AssemblyName>FMSApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\angular-moment-picker.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\CustomDropZone.css" />
+    <Content Include="assets\css\dropzone.min.css" />
+    <Content Include="assets\css\filepond.css" />
+    <Content Include="assets\css\filepound.css" />
+    <Content Include="assets\css\icons.css" />
+    <Content Include="assets\css\Loader.css" />
+    <Content Include="assets\css\metismenu.min.css" />
+    <Content Include="assets\css\steps.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\upload.css" />
+    <Content Include="assets\fonts\dripicons-v2.svg" />
+    <Content Include="assets\fonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\fa-solid-900.svg" />
+    <Content Include="assets\fonts\ionicons6f46.svg" />
+    <Content Include="assets\fonts\materialdesignicons-webfont772b.svg" />
+    <Content Include="assets\fonts\themify9f24.svg" />
+    <Content Include="assets\fonts\typicons.svg" />
+    <Content Include="assets\images\1.jpg" />
+    <Content Include="assets\images\a.gif" />
+    <Content Include="assets\images\apple.png" />
+    <Content Include="assets\images\c7.png" />
+    <Content Include="assets\images\DriverPercentage.png" />
+    <Content Include="assets\images\EzyPercentage.png" />
+    <Content Include="assets\images\Icons\Medicalroom.png" />
+    <Content Include="assets\images\Icons\ParkingArea.png" />
+    <Content Include="assets\images\Icons\Prinicipalroom.png" />
+    <Content Include="assets\images\Icons\staffroom.png" />
+    <Content Include="assets\images\Icons\Storeroom.png" />
+    <Content Include="assets\images\Icons\teacherroom.png" />
+    <Content Include="assets\images\images.jpg" />
+    <Content Include="assets\images\log.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\demopic.jpg" />
+    <Content Include="assets\images\demopic2.jpg" />
+    <Content Include="assets\images\error.png" />
+    <Content Include="assets\images\flags\ksa.jpg" />
+    <Content Include="assets\images\flags\us_flag.jpg" />
+    <Content Include="assets\images\Icons\AreaIcons\Auditorium.png" />
+    <Content Include="assets\images\Icons\AreaIcons\canteen.png" />
+    <Content Include="assets\images\Icons\AreaIcons\chemistry.png" />
+    <Content Include="assets\images\Icons\AreaIcons\classroom.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Medical room.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Parking Area.png" />
+    <Content Include="assets\images\Icons\AreaIcons\plus.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Prinicipal room.png" />
+    <Content Include="assets\images\Icons\AreaIcons\staff room.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Store room.png" />
+    <Content Include="assets\images\Icons\AreaIcons\teacher room.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\Cafeteria.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\civil.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\FireSafety.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\FrontOffice.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\HouseKeeping.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\Landscaping.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\lift.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\painter.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\ParkingArea.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\Pest Control.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\Plumbing.png" />
+    <Content Include="assets\images\Icons\FacilitiesIcons\Transportation.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Garden.png" />
+    <Content Include="assets\images\Icons\AreaIcons\hall.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Headmaster.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Laboratory.png" />
+    <Content Include="assets\images\Icons\AreaIcons\library.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Masjid.png" />
+    <Content Include="assets\images\Icons\AreaIcons\playground.png" />
+    <Content Include="assets\images\Icons\AreaIcons\qrcode.png" />
+    <Content Include="assets\images\Icons\AreaIcons\school.png" />
+    <Content Include="assets\images\Icons\AreaIcons\Staircase.png" />
+    <Content Include="assets\images\Icons\AreaIcons\toilet.png" />
+    <Content Include="assets\images\Icons\itemsicon\ac.png" />
+    <Content Include="assets\images\Icons\itemsicon\book.png" />
+    <Content Include="assets\images\Icons\itemsicon\furniture.png" />
+    <Content Include="assets\images\Icons\itemsicon\it.png" />
+    <Content Include="assets\images\Icons\itemsicon\plumbing.png" />
+    <Content Include="assets\images\Icons\itemsicon\solarenergy.png" />
+    <Content Include="assets\images\Icons\SubCat-Icons\split.png" />
+    <Content Include="assets\images\loader.gif" />
+    <Content Include="assets\images\logo-dark.png" />
+    <Content Include="assets\images\riyadhschool.png" />
+    <Content Include="assets\images\school.png" />
+    <Content Include="assets\images\services-icon\01.png" />
+    <Content Include="assets\images\services-icon\02.png" />
+    <Content Include="assets\images\services-icon\03.png" />
+    <Content Include="assets\images\services-icon\04.png" />
+    <Content Include="assets\images\services-icon\electrical.png" />
+    <Content Include="assets\images\services-icon\items.png" />
+    <Content Include="assets\images\services-icon\users.png" />
+    <Content Include="assets\images\twitter.png" />
+    <Content Include="assets\images\users\user-1.jpg" />
+    <Content Include="assets\images\users\user-10.jpg" />
+    <Content Include="assets\images\users\user-2.jpg" />
+    <Content Include="assets\images\users\user-3.jpg" />
+    <Content Include="assets\images\users\user-4.jpg" />
+    <Content Include="assets\images\users\user-5.jpg" />
+    <Content Include="assets\images\users\user-6.jpg" />
+    <Content Include="assets\images\users\user-7.jpg" />
+    <Content Include="assets\images\users\user-8.jpg" />
+    <Content Include="assets\images\users\user-9.jpg" />
+    <Content Include="assets\images\whatsapp.png" />
+    <Content Include="assets\js\angular-moment-picker.min.js" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\dirPagination.js" />
+    <Content Include="assets\js\dirPagination.tpl.html" />
+    <Content Include="assets\js\filepond.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.slimscroll.js" />
+    <Content Include="assets\js\metisMenu.min.js" />
+    <Content Include="assets\js\moment.js" />
+    <Content Include="assets\js\pickadate\picker.date.js" />
+    <Content Include="assets\js\pickadate\picker.js" />
+    <Content Include="assets\js\picker.date.js" />
+    <Content Include="assets\js\picker.js" />
+    <Content Include="assets\js\waves.min.js" />
+    <Content Include="assets\pages\calendar-init.js" />
+    <Content Include="assets\pages\chartist.init.js" />
+    <Content Include="assets\pages\chartjs.init.js" />
+    <Content Include="assets\pages\countdown.int.js" />
+    <Content Include="assets\pages\dashboard.js" />
+    <Content Include="assets\pages\datatables.init.js" />
+    <Content Include="assets\pages\echart.int.js" />
+    <Content Include="assets\pages\flot.init.js" />
+    <Content Include="assets\pages\form-advanced.js" />
+    <Content Include="assets\pages\form-editors.int.js" />
+    <Content Include="assets\pages\form-repeater.int.js" />
+    <Content Include="assets\pages\gmaps.js" />
+    <Content Include="assets\pages\jvectormap.init.js" />
+    <Content Include="assets\pages\lightbox.js" />
+    <Content Include="assets\pages\morris.init.js" />
+    <Content Include="assets\pages\rangeslider-init.js" />
+    <Content Include="assets\pages\rating-init.js" />
+    <Content Include="assets\pages\sparklines.init.js" />
+    <Content Include="assets\pages\sweet-alert.init.js" />
+    <Content Include="assets\pages\table-editable.int.js" />
+    <Content Include="assets\pages\xeditable.js" />
+    <Content Include="bin\FMSApp.dll" />
+    <Content Include="bin\FMSApp.pdb" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="FMSApp.js" />
+    <Content Include="Index.html" />
+    <Content Include="ngViews\Admins\AddSubAdmin.html" />
+    <Content Include="ngViews\Admins\AdminList.html" />
+    <Content Include="ngViews\Admins\AdSubAdmin.js" />
+    <Content Include="ngViews\CouponCreate\CouponCreate.html" />
+    <Content Include="ngViews\CouponCreate\CouponUpdate.html" />
+    <Content Include="ngViews\CouponCreate\CreateCoupon.js" />
+    <Content Include="ngViews\Customer\AddCustomer.html" />
+    <Content Include="ngViews\Customer\CustomerDetails.html" />
+    <Content Include="ngViews\Directives\Footer\Footer.html" />
+    <Content Include="ngViews\Directives\Footer\Footer.js" />
+    <Content Include="ngViews\Directives\Header\Header.html" />
+    <Content Include="ngViews\Directives\Header\Header.js" />
+    <Content Include="ngViews\Directives\Sidebar\Sidebar.html" />
+    <Content Include="ngViews\Directives\Sidebar\Sidebar.js" />
+    <Content Include="ngViews\Drivers\AddDriver.html" />
+    <Content Include="ngViews\Customer\Customer.js" />
+    <Content Include="ngViews\Drivers\DriverUpdate.html" />
+    <Content Include="ngViews\Customer\CustomerList.html" />
+    <Content Include="ngViews\Drivers\DriverDetails.html" />
+    <Content Include="ngViews\Drivers\Recharge.html" />
+    <Content Include="ngViews\Home\Home.html" />
+    <Content Include="ngViews\Home\Home.js" />
+    <Content Include="ngViews\ItemCategory\AddItem.html" />
+    <Content Include="ngViews\ItemCategory\AddItem.js" />
+    <Content Include="ngViews\ItemCategory\AddItemCategory.html" />
+    <Content Include="ngViews\ItemCategory\AddItemCategory.js" />
+    <Content Include="ngViews\Login\Login.html" />
+    <Content Include="ngViews\Login\Login.js" />
+    <Content Include="ngViews\Marketing\Marketing.html" />
+    <Content Include="ngViews\Marketing\Marketing.js" />
+    <Content Include="ngViews\Orders\Order.js" />
+    <Content Include="ngViews\Orders\Orderdetails.html" />
+    <Content Include="ngViews\Orders\OrderDetails.js" />
+    <Content Include="ngViews\Orders\Orderlist.html" />
+    <Content Include="assets\images\p.jpg" />
+    <Content Include="ngViews\Package\CreatePackage.html" />
+    <Content Include="ngViews\Package\CreatePackage.js" />
+    <Content Include="ngViews\Package\Package.html" />
+    <Content Include="ngViews\Payment\Payment.js" />
+    <Content Include="ngViews\Payment\PercentageDetails.html" />
+    <Content Include="ngViews\Profile\Profile.html" />
+    <Content Include="ngViews\Drivers\Driver.js" />
+    <Content Include="ngViews\Drivers\DriverList.html" />
+    <Content Include="ngViews\Vendor\VendorRegistration.html" />
+    <Content Include="ngViews\Vendor\VendorRegistration.js" />
+    <Content Include="ngViews\Vendor\Vendors.html" />
+    <Content Include="ngViews\Vendor\VendorUpdate.html" />
+    <Content Include="Scripts\angular-cookies.min.js" />
+    <Content Include="Scripts\angular-moment-picker.min.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\dirPagination.js" />
+    <Content Include="Scripts\dirPagination.tpl.html" />
+    <Content Include="Scripts\dropzone.min.js" />
+    <Content Include="Scripts\dropzone.script.js" />
+    <Content Include="Scripts\filepound.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\qrcode.min.js" />
+    <Content Include="Scripts\script.min.js" />
+    <Content Include="Scripts\Steps.js" />
+    <Content Include="Scripts\sweetalert.script.js" />
+    <Content Include="Scripts\sweetalert2.min.js" />
+    <Content Include="Scripts\swiper.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\dripicons-v2.eot" />
+    <Content Include="assets\fonts\dripicons-v2.ttf" />
+    <Content Include="assets\fonts\dripicons-v2.woff" />
+    <Content Include="assets\fonts\dripicons-v2d41d.eot" />
+    <Content Include="assets\fonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\fa-brands-400d41d.eot" />
+    <Content Include="assets\fonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\fa-regular-400d41d.eot" />
+    <Content Include="assets\fonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\fa-solid-900.woff2" />
+    <Content Include="assets\fonts\fa-solid-900d41d.eot" />
+    <Content Include="assets\fonts\ionicons6f46.eot" />
+    <Content Include="assets\fonts\ionicons6f46.ttf" />
+    <Content Include="assets\fonts\ionicons6f46.woff" />
+    <Content Include="assets\fonts\ionicons6f46.woff2" />
+    <Content Include="assets\fonts\materialdesignicons-webfont772b.eot" />
+    <Content Include="assets\fonts\materialdesignicons-webfont772b.ttf" />
+    <Content Include="assets\fonts\materialdesignicons-webfont772b.woff" />
+    <Content Include="assets\fonts\materialdesignicons-webfont772b.woff2" />
+    <Content Include="assets\fonts\materialdesignicons-webfontd41d.eot" />
+    <Content Include="assets\fonts\themify9f24.eot" />
+    <Content Include="assets\fonts\themify9f24.ttf" />
+    <Content Include="assets\fonts\themify9f24.woff" />
+    <Content Include="assets\fonts\themifyd41d.eot" />
+    <Content Include="assets\fonts\typicons.eot" />
+    <Content Include="assets\fonts\typicons.ttf" />
+    <Content Include="assets\fonts\typicons.woff" />
+    <Content Include="assets\fonts\typiconsd41d.eot" />
+    <Content Include="assets\images\Admin.webp" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\FMSApp.dll.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42119</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:42119/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

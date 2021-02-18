@@ -1,0 +1,261 @@
+﻿
+<style>
+    .button-switch {
+        font-size: 1.2em;
+        height: 1.875em;
+        margin-bottom: 0.625em;
+        position: relative;
+        width: 4em;
+    }
+
+        .button-switch .lbl-off,
+        .button-switch .lbl-on {
+            cursor: pointer;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            /*line-height: 1em;*/
+            position: absolute;
+            top: 0.4em;
+            transition: opacity 0.25s ease-out 0.1s;
+            text-transform: uppercase;
+        }
+
+        .button-switch .lbl-off {
+            right: 0.4375em;
+        }
+
+        .button-switch .lbl-on {
+            color: #fefefe;
+            opacity: 0;
+            left: 0.4375em;
+        }
+
+        .button-switch .switch {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 0;
+            font-size: 1em;
+            left: 0;
+            line-height: 0;
+            outline: none;
+            position: absolute;
+            top: 0;
+            width: 0;
+        }
+
+            .button-switch .switch:before, .button-switch .switch:after {
+                content: '';
+                font-size: 1em;
+                position: absolute;
+            }
+
+            .button-switch .switch:before {
+                border-radius: 1.25em;
+                background: #bdc3c7;
+                height: 1.875em;
+                left: -0.25em;
+                top: -0.1875em;
+                transition: background-color 0.25s ease-out 0.1s;
+                width: 4.5em;
+            }
+
+            .button-switch .switch:after {
+                box-shadow: 0 .0625em .375em 0 #666;
+                border-radius: 50%;
+                background: #fefefe;
+                height: 1.5em;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+                transition: -webkit-transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s, -webkit-transform 0.25s ease-out 0.1s;
+                width: 1.5em;
+            }
+
+            .button-switch .switch:checked:after {
+                -webkit-transform: translate(2.5em, 0);
+                transform: translate(2.5em, 0);
+            }
+
+            .button-switch .switch:checked ~ .lbl-off {
+                opacity: 0;
+            }
+
+            .button-switch .switch:checked ~ .lbl-on {
+                opacity: 1;
+            }
+
+
+
+            .button-switch .switch:checked:before {
+                background: #04bf68;
+            }
+</style>
+
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Delivery Heros</h4>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <a href="AddDrivers" class="btn btn-primary waves-effect waves-light active">
+                                        Add Drivers
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-3 float-right">
+                             
+                            </div>
+                        
+
+                        </div>
+                      
+                    </div>
+             
+                 
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Search Driver Name</label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="HeroName" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Mobile</label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="HeroName" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                </div>
+                              
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> SrNo </th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Mobile</th>
+                                                    <th scope="col">Number Plate</th>
+                                                    <th scope="col">Details</th>
+                                                   
+                                                    <th scope="col">Driver Status <br /></th>
+                                                    <th scope="col">Prime Driver<br /></th>
+                                                    <th scope="col">Action <br /></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr dir-paginate="c in Heros | itemsPerPage:10 |filter:HeroName">
+
+                                                    <th scope="row">{{$index+1}}</th>
+
+                                                    <td><a href="/Percentage/{{c.DeliveryHeroRegistrationId}}">{{c.HeroName}}</a></td>
+                                                    <!--<td><a href="/DriverDetails/{{c.DeliveryHeroRegistrationId}}">{{c.HeroName}}</a></td>-->
+                                                    <td>{{c.MobileNo}}</td>
+                                                    <td>{{c.PlateNo}}</td>
+                                                    <td><a href="/DriverDetails/{{c.DeliveryHeroRegistrationId}}"><i class="fa fa-info-circle ft"></a></i>View Details</td>
+                                                    <!--<td><a href="/DriverDetails/{{c.DeliveryHeroRegistrationId}}">{{c.HeroName}}</a></td>-->
+                                                  
+                                                    <td>
+                                                        <label class="button-switch">
+                                                            <input type="checkbox" ng-checked="c.IsActive == true"
+                                                                   id="Klapps" class="switch" name="klapps" />
+                                                            <label for="Klapps" class="lbl-off">No</label>
+                                                            <label for="Klapps" class="lbl-on">Yes</label>
+                                                        </label>
+                                                      </td>
+
+                                                    <td>
+                                                        <label class="button-switch">
+                                                            <input type="checkbox" ng-checked="c.isPrime == true"
+                                                                   id="Klapps" class="switch" name="klapps" />
+                                                            <label for="Klapps" class="lbl-off">No</label>
+                                                            <label for="Klapps" class="lbl-on">Yes</label>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/DriverUpdate/{{c.DeliveryHeroRegistrationId}}" >
+                                                            <i class="far fa-edit ft"></i>
+                                                        </a>
+                                                        |
+                                                        <a href="javascript:void(0);" data-toggle="modal"
+                                                           ng-click="DeleteDriver(c.DeliveryHeroRegistrationId);"
+                                                           data-target="DeleteRecord" >
+                                                            <i class="fa fa-trash ft" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                   
+
+
+
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="10"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

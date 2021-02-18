@@ -1,0 +1,152 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Customer List</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <!--<a href="AddCustomer" class="btn btn-primary waves-effect waves-light active">
+                                        Add Customer
+                                    </a>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> (#) </th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Mobile</th>
+                                                    
+                                                    <!--<th scope="col"<th><input type="checkbox" ng-model="IsAllChecked" ng-change="CheckUncheckAll()" >Select all</th><br /></th>-->
+                                                    <th scope="col">Send Notification to</th>
+                                                    <th scope="col">Wallet</th>
+                                                    
+                                                   <!--<th>
+                                                    <input type="checkbox" ng-checked="c.IsSelect" ng-click="toggleSelect()" ng-model="c.IsSelect" name="vehicle1{{$index}}">ALL
+                                                   </th>--> 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="c in CustomerList">
+                                                    <th scope="row">{{$index+1}}</th>
+                                                    <td><a href="/Details/{{c.CustomerId}}">{{c.Name}}</a></td>
+                                                    <td>{{c.MobileNo}}</td>
+                                                    <td>
+                                                        <input type="checkbox" ng-change="optionToggled()" ng-checked="c.IsSelect" ng-model="c.IsSelect" name="vehicle1{{$index}}">
+                                                        <br>
+                                                    </td>
+                                                    <td>{{c.Wallet}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 style="text-align:center;font-size:15px;" class="card-title">Push Notification</h4>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Title</label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="firstname" ng-model="obj.Title">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Notification Message </label>
+                                                <div>
+                                                    <textarea class="form-control" rows="4" cols="55" ng-model="obj.Massage"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                         
+                                                <div>
+                                                    <input type="checkbox" ng-click="toggleAll()" ng-model="isAllSelected" name="vehicle1{{$index}}"> Send Notification to all Customers
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-md-12">
+                                            <div class="form-group mb-0">
+                                                <div style="text-align:center;">
+
+                                                    <button type="submit" ng-click="SendNotification(obj)" class="btn btn-primary waves-effect waves-light mr-1">
+                                                        Send Notification
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                   
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

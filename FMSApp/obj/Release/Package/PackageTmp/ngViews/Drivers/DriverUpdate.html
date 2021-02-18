@@ -1,0 +1,178 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+        <div class="content-page">
+            <form name="userform" novalidate autocomplete="off">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title">Update Delivery Hero</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <img src="{{filePath}}{{Hero.Photo}}" alt="user" class="profile-img">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Full Name</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="firstname" ng-model="Hero.HeroName">
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.firstname.$error.required"><font color="red">Please Enter First Name</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Mobile</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="email" ng-model="Hero.MobileNo" >
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.email.$error.required"><font color="red">Please Enter Email Address</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Wallet</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="wallet"ng-model="Hero.Wallet">
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.password.$error.required"><font color="red">Please Enter Password</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Plate Number</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="platenumber" ng-model="Hero.PlateNo">
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.password.$error.required"><font color="red">Please Enter Password</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Password</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="wallet" ng-model="Hero.Password">
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.password.$error.required"><font color="red">Please Enter Password</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>IMEI Number</label>
+                                                        <div>
+                                                            <input type="text" class="form-control" name="platenumber" ng-model="Hero.IMEI">
+                                                            <!--<span class="err-msg" ng-show="submitted==true && userform.password.$error.required"><font color="red">Please Enter Password</font></span>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div ui-sref="task">
+                                                        <div class="main-box clearfix profile-box">
+                                                            <div class="main-box-body clearfix">
+                                                                <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero RC-Book</h>
+                                                                <div class="profile-box-header" padding-bottom:222px;">
+
+                                                                    <img ng-src="{{filePath}}{{Hero.RegCert}}" class="img-responsive " style="width:155px;">
+
+                                                                </div>
+                                                                <div class="profile-box-footer clearfix">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div ui-sref="task">
+                                                        <div class="main-box clearfix profile-box">
+                                                            <div class="main-box-body clearfix">
+                                                                <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero-PanCard</h>
+                                                                <div class="profile-box-header" padding-bottom:222px;">
+
+                                                                    <img ng-src="{{filePath}}{{Hero.PanCard}}" class="img-responsive " style="width:155px;">
+
+                                                                </div>
+                                                                <div class="profile-box-footer clearfix">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div ui-sref="task">
+                                                        <div class="main-box clearfix profile-box">
+                                                            <div class="main-box-body clearfix">
+                                                                <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero-AdharCard</h>
+                                                                <div class="profile-box-header" padding-bottom:222px;">
+
+                                                                    <img ng-src="{{filePath}}{{Hero.AdharCard}}" class="img-responsive " style="width:155px;">
+
+                                                                </div>
+                                                                <div class="profile-box-footer clearfix">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                                                       
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group mb-0">
+                                                        <div style="text-align:center;">
+                                                            <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+                                                            <button type="submit" ng-click="DriverUpdate(Hero)" class="btn btn-primary waves-effect waves-light mr-1">
+                                                                Submit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- container-fluid -->
+            </form>
+            <div footerpage="">
+                <footer class="footer">
+                    <span>© 2019 Riyadh Schools - Developed by <a class="url" data-target="_blank" href="http://www.ibsksa.com/">Intelligent Business Solutions</a></span>.
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div footerpage>
+
+    </div>
+
+</div>
+</div>

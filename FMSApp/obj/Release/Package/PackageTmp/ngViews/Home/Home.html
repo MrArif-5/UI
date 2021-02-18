@@ -1,0 +1,281 @@
+﻿
+<style>
+    .rights {
+        float: right;
+        margin-top: -50px;
+    }
+
+    .btn-success:hover {
+        background-color: #0094ff;
+    }
+</style>
+
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="mt-0 header-title mb-4">Dashboard</h4>
+                                <ol class="breadcrumb">
+                                    <!--<li class="breadcrumb-item active">
+                                      Ezy Delivery DashBoard
+                                    </li>-->
+                                </ol>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--<div class="row">
+                        <div class="col-xl-4 col-md-6">
+                            <div class="card mini-stat bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div class="float-left mini-stat-img mr-4">
+                                            <img src="../../assets/images/DriverPercentage.png" alt="">
+                                        </div>
+                                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Driver-Percentage </h5>
+                                        <h4 class="font-500">
+                                            {{PercentageDetails.DriverPercentage}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="card mini-stat bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div class="float-left mini-stat-img mr-4">
+                                            <img src="../../assets/images/EzyPercentage.png" alt="">
+                                        </div>
+                                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Ezy-Percentage </h5>
+                                        <h4 class="font-500">
+                                            {{PercentageDetails.EzyPercentage}}  <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="card mini-stat bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div class="float-left mini-stat-img mr-4">
+                                            <img src="../../assets/images/images.jpg" alt="">
+                                        </div>
+                                        <h5 class="font-16 text-uppercase mt-0 text-white-50">Total-Ezy-Earn</h5>
+                                        <h4 class="font-500">
+                                            {{PercentageDetails.Price}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <!--<div class="float-right d-none d-md-block">
+
+                        <button type="submit" ng-click="GetTodayOrderListForAdmin()" class="btn btn-primary waves-effect waves-light active">
+                            Get-Order
+                        </button>
+
+                    </div>-->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Sort By</label>
+                                        <div class="moment-picker">
+                                            <span class="moment-picker-contents">
+                                                <div class=" form-input ng-isolate-scope "
+                                                     moment-picker="dateOfMyOrder" format="MM/DD/YYYY">
+                                                    <input class="form-control"
+                                                           name="dateOfMyOrder" start-view="month"
+                                                           style="padding-left: 10px;"
+                                                           ng-model="dateOfMyOrder"
+                                                           ng-model-options="{ updateOn: 'blur' }" autocomplete="off">
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary w-md waves-effect waves-light lg-btn" ng-click="GetAllOrders()"
+                                            style="margin: 30px;position: absolute;width: 65%;" ">
+                                        All Orders
+                                    </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary w-md waves-effect waves-light lg-btn" ng-click="Reload()"
+                                            style="margin: 30px;position: absolute;width: 65%;" ">
+                                        Today's Orders
+                                    </button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Search Order Number </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Search Order Number </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>From Number </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="FromNumber">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Order Status name</label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="OrderStatusName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Driver Name</label>
+                                        <select class="form-control" ng-model="DriverId" ng-change="GetTodayOrderListForAdmin(DriverId)">
+
+                                            <option value="">Select Driver Name</option>
+                                            <option ng-repeat="c in Heros" value="{{c.DeliveryHeroRegistrationId}}">
+
+                                                {{c.HeroName}}
+
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                           <div class="col-md-4">
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="mt-0 header-title m-b-20">Orders: {{PercentageDetails.OrderList.length}}</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+
+                                                    <th scope="col">OrderID</th>
+                                                    <th scope="col">Order No</th>
+                                                    <th scope="col">From No</th>
+                                                    <th scope="col">To No</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Payment</th>
+                                                    <th scope="col">Pay From</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Discount</th>
+                                                   
+                                                    <th scope="col">Cancel Order</th>
+                                                </tr>
+                                            </thead>
+
+
+                                            <tbody>
+
+                                                <tr ng-repeat="c in AllcustOrderList |
+                                                     filter:CustomerOrderNo | filter:HeroName |
+                                                    filter:FromNumber  | filter:ToNumber | filter:OrderStatusName | filter:search">
+
+                                                    <!--<th scope="row">{{$index + 1 }}</th>-->
+                                                    <th scope="row">{{c.CustomerOrderId}}</th>
+                                                    <td><a href="/OrderDetails/{{c.CustomerOrderId}}">{{c.CustomerOrderNo}}</a></td>
+                                                    <td>{{c.FromNumber}}</td>
+                                                    <td>{{c.ToNumber}}</td>
+
+                                                    <td>{{c.Date | date:'medium'}}</td>
+                                                    <td>
+                                                        <div ng-if="c.isPaid == null">
+                                                            <a href="javasript:void(0);" ng-click="ChangeStatus(c.CustomerOrderId)">
+                                                                <b><span class="badge badge-danger">Un-Paid</span></b>
+                                                            </a>
+                                                        </div>
+                                                        <div ng-if="c.isPaid">
+                                                            <span class="badge badge-pill badge-success">Paid</span>
+
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge badge-warning">{{c.PaymentFrom}}</span></td>
+                                                    <td><b><span class="badge badge-pill badge-danger">{{c.OrderStatusName}}</span></b></td>
+                                                    <td ng-show="c.CouponId !=''"><span class="badge badge-dark">Coupon</span></td>
+                                                    <td ng-show="c.IsWalletUse"><span class="badge badge-primary">Wallet</span></td>
+
+                                                    <!--<td><b><span class="badge badge-warning" ng-show="c.OrderStatusId == 3">{{c.OrderStatusName}}</span></b></td>
+                                                    <td><b><span class="badge badge-danger" ng-show="c.OrderStatusId == 4">{{c.OrderStatusName}}</span></b></td>
+                                                    <td><b><span class="badge badge-success" ng-show="c.OrderStatusId == 5">{{c.OrderStatusName}}</span></b></td>
+                                                    <td><b><span class="badge badge-primary" ng-show="c.OrderStatusId == 6">{{c.OrderStatusName}}</span></b></td>
+                                                    <td><b><span class="badge badge-secondary" ng-show="c.OrderStatusId == 7">{{c.OrderStatusName}}</span></b></td>
+                                                    <td><b><span class="badge badge-pill badge-dark" ng-show="c.OrderStatusId == 8">{{c.OrderStatusName}}</span></b></td>-->
+
+
+                                                    <td>
+                                                        <div><a href="#" class="far fa-times-circle" ng-click="CancelOrder(c.CustomerOrderId)" ng-show="c.OrderStatusId == 3 "></a></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                  
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div footerpage>
+
+</div>
+
+        </div>
+
+</div>
+

@@ -1,0 +1,302 @@
+﻿
+    <style >
+        .button-switch {
+            font-size: 1.2em;
+            height: 1.875em;
+            margin-bottom: 0.625em;
+            position: relative;
+            width: 4em;
+        }
+
+            .button-switch .lbl-off,
+            .button-switch .lbl-on {
+                cursor: pointer;
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                /*line-height: 1em;*/
+                position: absolute;
+                top: 0.4em;
+                transition: opacity 0.25s ease-out 0.1s;
+                text-transform: uppercase;
+            }
+
+            .button-switch .lbl-off {
+                right: 0.4375em;
+            }
+
+            .button-switch .lbl-on {
+                color: #fefefe;
+                opacity: 0;
+                left: 0.4375em;
+            }
+
+            .button-switch .switch {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                height: 0;
+                font-size: 1em;
+                left: 0;
+                line-height: 0;
+                outline: none;
+                position: absolute;
+                top: 0;
+                width: 0;
+            }
+
+                .button-switch .switch:before, .button-switch .switch:after {
+                    content: '';
+                    font-size: 1em;
+                    position: absolute;
+                }
+
+                .button-switch .switch:before {
+                    border-radius: 1.25em;
+                    background: #bdc3c7;
+                    height: 1.875em;
+                    left: -0.25em;
+                    top: -0.1875em;
+                    transition: background-color 0.25s ease-out 0.1s;
+                    width: 4.5em;
+                }
+
+                .button-switch .switch:after {
+                    box-shadow: 0 .0625em .375em 0 #666;
+                    border-radius: 50%;
+                    background: #fefefe;
+                    height: 1.5em;
+                    -webkit-transform: translate(0, 0);
+                    transform: translate(0, 0);
+                    transition: -webkit-transform 0.25s ease-out 0.1s;
+                    transition: transform 0.25s ease-out 0.1s;
+                    transition: transform 0.25s ease-out 0.1s, -webkit-transform 0.25s ease-out 0.1s;
+                    width: 1.5em;
+                }
+
+                .button-switch .switch:checked:after {
+                    -webkit-transform: translate(2.5em, 0);
+                    transform: translate(2.5em, 0);
+                }
+
+                .button-switch .switch:checked ~ .lbl-off {
+                    opacity: 0;
+                }
+
+                .button-switch .switch:checked ~ .lbl-on {
+                    opacity: 1;
+                }
+
+
+
+                .button-switch .switch:checked:before {
+                    background: #343777;
+                }
+
+   
+</style>
+
+
+
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+       
+        <div class="content-page">
+            <div class="content">
+             
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Driver Details</h4>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label>
+                                                  Prime Driver
+                                                </label>
+                                                <div class="button-switch">
+
+                                                    <input type="checkbox" ng-model="Hero.isPrime" 
+                                                           ng-change="DriverIsCOD(Hero.isPrime)" ng-value="Hero.isPrime" 
+                                                           id="Klapps" class="switch" name="klapps" />
+                                                    <label for="Klapps" class="lbl-off">NO</label>
+                                                    <label for="Klapps" class="lbl-on">Yes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label>
+                                                    Driver Status
+                                                </label>
+                                                <div class="button-switch">
+
+                                                    <input type="checkbox" ng-model="Hero.IsActive"
+                                                           ng-value="Hero.IsActive" ng-change="BlockAndUnblock(Hero.IsActive)" 
+                                                           name="skipmeals" id="Stepper" class="switch" />
+                                                    <label for="Stepper" class="lbl-off">No</label>
+                                                    <label for="Stepper" class="lbl-on">Yes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                      
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="Order-label">Hero Name</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label class="Order-label">{{Hero.HeroName}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="Order-label">Mobile Number</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label class="Order-label">{{Hero.MobileNo}}</label>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="Order-label">Date Of Birth</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label class="Order-label">{{Hero.DOB | date}}</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="Order-label">Plate Number</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label class="Order-label">{{Hero.PlateNo}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label class="Order-label">Driver Wallet</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label class="Order-label">{{Hero.Wallet}}</label>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-lg-4" ng-show="Hero.Photo!=null">
+                                            <div ui-sref="task" >
+                                                <div class="main-box clearfix profile-box">
+                                                    <div class="main-box-body clearfix">
+                                                        <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero Image</h>
+                                                        <div class="profile-box-header" padding-bottom:222px;">
+
+                                                            <img ng-src="{{filePath}}{{Hero.Photo}}" class="img-responsive " style="width:155px;">
+
+                                                        </div>
+                                                        <div class="profile-box-footer clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4"ng-show="Hero.RegCert!=null">
+                                            <div ui-sref="task">
+                                                <div class="main-box clearfix profile-box">
+                                                    <div class="main-box-body clearfix">
+                                                        <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero RC-Book</h>
+                                                        <div class="profile-box-header" padding-bottom:222px;">
+
+                                                            <img ng-src="{{filePath}}{{Hero.RegCert}}" class="img-responsive " style="width:155px;">
+
+                                                        </div>
+                                                        <div class="profile-box-footer clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4"ng-show="Hero.DrivingLicense!=null">
+                                            <div ui-sref="task">
+                                                <div class="main-box clearfix profile-box">
+                                                    <div class="main-box-body clearfix">
+                                                        <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero-Driving-License</h>
+                                                        <div class="profile-box-header" padding-bottom:222px;">
+
+                                                            <img ng-src="{{filePath}}{{Hero.DrivingLicense}}" class="img-responsive " style="width:155px;">
+
+                                                        </div>
+                                                        <div class="profile-box-footer clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4"ng-show="Hero.PanCard!=null">
+                                            <div ui-sref="task">
+                                                <div class="main-box clearfix profile-box">
+                                                    <div class="main-box-body clearfix">
+                                                        <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero-PanCard</h>
+                                                        <div class="profile-box-header" padding-bottom:222px;">
+
+                                                            <img ng-src="{{filePath}}{{Hero.PanCard}}" class="img-responsive " style="width:155px;">
+
+                                                        </div>
+                                                        <div class="profile-box-footer clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4"ng-show="Hero.AdharCard!=null">
+                                            <div ui-sref="task">
+                                                <div class="main-box clearfix profile-box">
+                                                    <div class="main-box-body clearfix">
+                                                        <h style="border-top: 1px solid white; font-weight: bold;width:200px; ">Hero-AdharCard</h>
+                                                        <div class="profile-box-header" padding-bottom:222px;">
+
+                                                            <img ng-src="{{filePath}}{{Hero.AdharCard}}" class="img-responsive " style="width:155px;">
+
+                                                        </div>
+                                                        <div class="profile-box-footer clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end row -->
+            </div><!-- container-fluid -->
+        </div>
+       </div>
+    <div footerpage>
+
+    </div>
+
+</div>
+
+
+

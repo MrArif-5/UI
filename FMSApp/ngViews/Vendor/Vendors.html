@@ -1,0 +1,361 @@
+﻿
+<style>
+    .button-switch {
+        font-size: 1.2em;
+        height: 1.875em;
+        margin-bottom: 0.625em;
+        position: relative;
+        width: 4em;
+    }
+
+        .button-switch .lbl-off,
+        .button-switch .lbl-on {
+            cursor: pointer;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            /*line-height: 1em;*/
+            position: absolute;
+            top: 0.4em;
+            transition: opacity 0.25s ease-out 0.1s;
+            text-transform: uppercase;
+        }
+
+        .button-switch .lbl-off {
+            right: 0.4375em;
+        }
+
+        .button-switch .lbl-on {
+            color: #fefefe;
+            opacity: 0;
+            left: 0.4375em;
+        }
+
+        .button-switch .switch {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 0;
+            font-size: 1em;
+            left: 0;
+            line-height: 0;
+            outline: none;
+            position: absolute;
+            top: 0;
+            width: 0;
+        }
+
+            .button-switch .switch:before, .button-switch .switch:after {
+                content: '';
+                font-size: 1em;
+                position: absolute;
+            }
+
+            .button-switch .switch:before {
+                border-radius: 1.25em;
+                background: #bdc3c7;
+                height: 1.875em;
+                left: -0.25em;
+                top: -0.1875em;
+                transition: background-color 0.25s ease-out 0.1s;
+                width: 4.5em;
+            }
+
+            .button-switch .switch:after {
+                box-shadow: 0 .0625em .375em 0 #666;
+                border-radius: 50%;
+                background: #fefefe;
+                height: 1.5em;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+                transition: -webkit-transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s, -webkit-transform 0.25s ease-out 0.1s;
+                width: 1.5em;
+            }
+
+            .button-switch .switch:checked:after {
+                -webkit-transform: translate(2.5em, 0);
+                transform: translate(2.5em, 0);
+            }
+
+            .button-switch .switch:checked ~ .lbl-off {
+                opacity: 0;
+            }
+
+            .button-switch .switch:checked ~ .lbl-on {
+                opacity: 1;
+            }
+
+
+
+            .button-switch .switch:checked:before {
+                background: #04bf68;
+            }
+</style>
+
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Vendors</h4>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <a href="/VendorRegistration" class="btn btn-primary waves-effect waves-light active">
+                                        Add Vendors
+                                    </a>
+
+                                </div>
+                                <!--<div class="col-md-4">
+                    <button type="submit" ng-click="BulkUpload()" class="btn btn-primary waves-effect waves-light active">
+                        Upload
+                    </button>
+                </div>-->
+
+                            </div>
+                            <!--<div class="col-sm-3 float-right">
+                <div>
+                    <input type="file" id="file1" name="file"
+                           ng-files="getTheFiles($files)" />
+                </div>
+
+            </div>-->
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-4 col-md-2">
+                            <div class="card mini-stat bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div class="float-left mini-stat-img mr-4">
+                                            <img src="../../assets/images/DriverPercentage.png" alt="">
+                                        </div>
+                                        <h5 class="font-16  mt-0 text-white-50">Total Vendors</h5>
+                                        <h4 class="font-500">
+                                            {{CustomerList.TotalCustomer}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-xl-4 col-md-2">
+        <div class="card mini-stat bg-primary text-white">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="float-left mini-stat-img mr-4">
+                        <img src="../../assets/images/EzyPercentage.png" alt="">
+                    </div>
+                    <h5 class="font-16 text-uppercase mt-0 text-white-50">New Customer</h5>
+                    <h4 class="font-500">
+                         {{CustomerList.NewCustomer}}<i class="mdi mdi-arrow-up text-success ml-2"></i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>-->
+                        <!--<div class="col-xl-4 col-md-2">
+        <div class="card mini-stat bg-primary text-white">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="float-left mini-stat-img mr-4">
+                        <img src="../../assets/images/images.jpg" alt="">
+                    </div>
+                    <h5 class="font-16 text-uppercase mt-0 text-white-50">Order Placed</h5>
+                    <h4 class="font-500">
+                        {{CustomerList.OrderPlaced}}<i class="mdi mdi-arrow-up text-success ml-2"></i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>-->
+                        <div class="col-xl-4 col-md-2">
+                            <div class="card mini-stat bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <div class="float-left mini-stat-img mr-4">
+                                            <img src="../../assets/images/DriverPercentage.png" alt="">
+                                        </div>
+                                        <h5 class="font-16  mt-0 text-white-50">Total Vendors Orders</h5>
+                                        <h4 class="font-500">
+                                            {{CustomerList.TotalCustomer}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Vendor Name</label>
+                                        <select class="form-control" ng-model="DriverId" ng-change="GetDriverOrdersAndKilometer(DriverId)">
+
+                                            <option value="">Select Driver Name</option>
+                                            <option ng-repeat="c in Heros" value="{{c.DeliveryHeroRegistrationId}}">
+
+                                                {{c.HeroName}}
+
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>From Date</label>
+                                    <div class="form-input"
+                                         moment-picker="FromDate"
+                                         format="MM/DD/YYYY">
+                                        <input class="form-control field__input"
+                                               name="FromDate"
+                                               start-view="month"
+                                               style="padding-left: 10px;"
+                                               ng-model="FromDate"
+                                               ng-model-options="{ updateOn: 'blur' }" autocomplete="off">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>To Date</label>
+                                    <div class="form-input"
+                                         moment-picker="ToDate"
+                                         format="MM/DD/YYYY">
+                                        <input class="form-control field__input"
+                                               name="ToDate"
+                                               start-view="month"
+                                               style="padding-left: 10px;"
+                                               ng-model="ToDate"
+                                               ng-model-options="{ updateOn: 'blur' }" autocomplete="off">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Search Order Number </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Search OrderId </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderId">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Order Status name</label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="OrderStatusName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>From Number </label>
+                                        <div>
+                                            <input type="text" class="form-control" name="firstname" ng-model="FromNumber">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">VendorName</th>
+                                                    <th scope="col">OpenTime</th>
+                                                    <th scope="col">CloseTime</th>
+                                                    <th scope="col">WhatsappNo</th>
+                                                    <th scope="col">MobileNo<br /></th>
+                                                    <th scope="col">
+                                                        Add Item Category<br />
+                                                    </th>
+                                                    <th scope="col">Add Item <br /></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr dir-paginate="x in Vendors | itemsPerPage:10">
+
+                                                    <td><a href="/VendorUpdate/{{x.VendorRegistrationId}}">{{x.VendorName}}</a></td>
+                                                    <td>{{x.OpenTime}}</td>
+                                                    <td>{{x.CloseTime}}</td>
+                                                    <td>{{x.WhatsappNo}}</td>
+                                                    <td>{{x.MobileNo}}</td>
+                                                    <td><a href="/AddItemCategory/{{x.VendorRegistrationId}}">Add Category</a></td>
+                                                    <td><a href="/AddItem/{{x.VendorRegistrationId}}" ng-click="GetItemCategoryBy(x.VendorRegistrationId)">Add Item</a></td>
+
+
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="10"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

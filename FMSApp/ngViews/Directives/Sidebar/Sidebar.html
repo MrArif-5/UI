@@ -1,0 +1,101 @@
+﻿<ul class="list-inline menu-left mb-0">
+    <li class="float-left">
+        <button class="button-menu-mobile open-left waves-effect" ng-click="toggle()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+    </li>
+</ul>
+<div class="left side-menu vertical-menu mm-active" id="sideBarExpand">
+    <div class="slimscroll-menu" id="remove-scroll">
+        <!--- Sidemenu -->
+        <div id="sidebar-menu" ng-show="AdminSignIn.Users.RoleId ==1">
+            <!-- Left Menu Start -->
+            <ul class="metismenu" id="side-menu">
+                <li class="menu-title">Main</li>
+                <li>
+                    <a href="/Home" class="waves-effect active">
+                        <i class="ti-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/CustomerList" class="waves-effect">
+                        <i class="fas fa-user"></i><span>
+                            Customers
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Drivers" class="waves-effect">
+                        <i class="fa fa-motorcycle" aria-hidden="true"></i><span>
+                            Drivers
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/CouponCreate" class="waves-effect">
+                        <i class="fa fa-money-check-alt" aria-hidden="true"></i><span>
+                            Coupons
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Marketing" class="waves-effect">
+                        <i class="fa fa-mars" aria-hidden="true"></i><span>
+                            Marketing
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Recharge" class="waves-effect">
+                        <i class="fas fa-rupee-sign"></i><span>
+                            Wallet-Recharge
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Package" class="waves-effect">
+                        <i class="fa fa-hand-point-right" aria-hidden="true"></i>
+                        Package
+
+                    </a>
+                </li>
+                <li>
+                    <a href="/Vendors" class="waves-effect">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                       Vendors  
+
+                    </a>
+                </li>
+                <li>
+                    <a href="/AddSubAdmin" class="waves-effect">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        Add-Sub Admin
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="sidebar-menu" ng-show="AdminSignIn.Users.RoleId ==2">
+            <!-- Left Menu Start -->
+            <ul class="metismenu" id="side-menu">
+                <li class="menu-title">Main</li>
+                <li>
+                    <a href="/Home" class="waves-effect active">
+                        <i class="ti-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Recharge" class="waves-effect">
+                        <i class="fas fa-rupee-sign"></i><span>
+                            Wallet-Recharge
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

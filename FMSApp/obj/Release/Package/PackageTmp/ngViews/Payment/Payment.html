@@ -1,0 +1,152 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Income + Expenditure</h4>
+                            </div>
+
+                            <!--<div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <a href="AddDrivers" class="btn btn-primary waves-effect waves-light active">
+                                        Add Drivers
+                                    </a>
+
+                                </div>
+
+                            </div>-->
+                            <!--<div class="col-sm-3 float-right">
+                                <div class="form-group">
+                                    <label>Search Driver Name</label>
+                                    <div>
+                                        <input type="text" class="form-control" name="firstname" ng-model="HeroName" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>-->
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card mini-stat bg-primary text-white">
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <div class="float-left mini-stat-img mr-4">
+                                                <img src="../../assets/images/DriverPercentage.png" alt="">
+                                            </div>
+                                            <h5 class="font-16 text-uppercase mt-0 text-white-50">Driver-Percentage </h5>
+                                            <h4 class="font-500">
+                                                {{PerCentage.DriverPercentage}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card mini-stat bg-primary text-white">
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <div class="float-left mini-stat-img mr-4">
+                                                <img src="../../assets/images/EzyPercentage.png" alt="">
+                                            </div>
+                                            <h5 class="font-16 text-uppercase mt-0 text-white-50">Ezy-Percentage </h5>
+                                            <h4 class="font-500">
+                                                {{PerCentage.EzyPercentage}}  <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card mini-stat bg-primary text-white">
+                                    <div class="card-body">
+                                        <div class="mb-4">
+                                            <div class="float-left mini-stat-img mr-4">
+                                                <img src="../../assets/images/images.jpg" alt="">
+                                            </div>
+                                            <h5 class="font-16 text-uppercase mt-0 text-white-50">Total-Ezy-Earn</h5>
+                                            <h4 class="font-500">
+                                                {{PerCentage.Price}} <i class="mdi mdi-arrow-up text-success ml-2"></i>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> SrNo </th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Mobile</th>
+                                                    <th scope="col">Number Plate</th>
+                                                    <th scope="col">Ger-Driver Percentage</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr dir-paginate="c in Heros | itemsPerPage:5 |filter:HeroName">
+
+                                                    <th scope="row">{{$index+1}}</th>
+
+                                                    <td><a href="/DriverOrderList/{{c.DeliveryHeroRegistrationId}}">{{c.HeroName}}</a></td>
+                                                    <td>{{c.MobileNo}}</td>
+                                                    <td>{{c.PlateNo}}</td>
+                                                    <td><a href="/Percentage/{{c.DeliveryHeroRegistrationId}}"><i class="fa fa-percent"></a></i></td>
+                                                   
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="10"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

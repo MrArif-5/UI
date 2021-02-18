@@ -1,0 +1,196 @@
+﻿
+<style>
+    .button-switch {
+        font-size: 1.2em;
+        height: 1.875em;
+        margin-bottom: 0.625em;
+        position: relative;
+        width: 4em;
+    }
+
+        .button-switch .lbl-off,
+        .button-switch .lbl-on {
+            cursor: pointer;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            /*line-height: 1em;*/
+            position: absolute;
+            top: 0.4em;
+            transition: opacity 0.25s ease-out 0.1s;
+            text-transform: uppercase;
+        }
+
+        .button-switch .lbl-off {
+            right: 0.4375em;
+        }
+
+        .button-switch .lbl-on {
+            color: #fefefe;
+            opacity: 0;
+            left: 0.4375em;
+        }
+
+        .button-switch .switch {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 0;
+            font-size: 1em;
+            left: 0;
+            line-height: 0;
+            outline: none;
+            position: absolute;
+            top: 0;
+            width: 0;
+        }
+
+            .button-switch .switch:before, .button-switch .switch:after {
+                content: '';
+                font-size: 1em;
+                position: absolute;
+            }
+
+            .button-switch .switch:before {
+                border-radius: 1.25em;
+                background: #bdc3c7;
+                height: 1.875em;
+                left: -0.25em;
+                top: -0.1875em;
+                transition: background-color 0.25s ease-out 0.1s;
+                width: 4.5em;
+            }
+
+            .button-switch .switch:after {
+                box-shadow: 0 .0625em .375em 0 #666;
+                border-radius: 50%;
+                background: #fefefe;
+                height: 1.5em;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+                transition: -webkit-transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s;
+                transition: transform 0.25s ease-out 0.1s, -webkit-transform 0.25s ease-out 0.1s;
+                width: 1.5em;
+            }
+
+            .button-switch .switch:checked:after {
+                -webkit-transform: translate(2.5em, 0);
+                transform: translate(2.5em, 0);
+            }
+
+            .button-switch .switch:checked ~ .lbl-off {
+                opacity: 0;
+            }
+
+            .button-switch .switch:checked ~ .lbl-on {
+                opacity: 1;
+            }
+
+
+
+            .button-switch .switch:checked:before {
+                background: #04bf68;
+            }
+</style>
+
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Packages</h4>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <a href="/CreatePackage" class="btn btn-primary waves-effect waves-light active">
+                                        Create Package
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 float-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">PackageName</th>
+                                                    <th scope="col">PackagePrice</th>
+                                                    <th scope="col">PackageWallet</th>
+                                                    <th scope="col">Validity</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr dir-paginate="x in Packages | itemsPerPage:10">
+
+                                                    <!--<td><a href="/VendorUpdate/{{x.VendorRegistrationId}}">{{x.VendorName}}</a></td>-->
+                                                    <td>{{x.PackageName}}</td>
+                                                    <td>{{x.PackagePrice}}</td>
+                                                    <td>{{x.PackageWallet}}</td>
+                                                    <td>{{x.Validity}}</td>
+                                                    <!--<td><a href="/AddItemCategory/{{x.VendorRegistrationId}}">Add Category</a></td>
+                                                    <td><a href="/AddItem/{{x.VendorRegistrationId}}" ng-click="GetItemCategoryBy(x.VendorRegistrationId)">Add Item</a></td>-->
+
+
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="10"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

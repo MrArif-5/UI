@@ -1,0 +1,233 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Order Details</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <!--<a href="AddCustomer" class="btn btn-primary waves-effect waves-light active">
+                                        Add Customer
+                                    </a>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="Order-label">Order #</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="Order-label">{{OrderDetails.CustomerOrderNo}}</label>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Date  </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.OrderDate | date:'medium'}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.Name}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">MobileNo</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.MobileNo}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Price</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.Price | number: 0}}</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Ezy Delivery Percentage</label>
+                                        </div>
+                                        <!--<div class="col-md-8">
+            <label class="Order-label" >{{((30/100)*OrderDetails.Price).toFixed(2)}}</label>
+        </div>-->
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.EzyPercentage}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Driver Percentage</label>
+                                        </div>
+                                        <!--<div class="col-md-8">
+            <label class="Order-label">{{((70/100)*OrderDetails.Price).toFixed(2)}}</label>
+        </div>-->
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.DriverPercentage}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Coupon</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.CouponCode}}</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Wallet Deduction</label>
+                                        </div>
+                                     <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.WalletDeductionAmount}}</label>
+                                        </div>
+
+
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Hero ID</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.DriverId}}</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Hero Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.HeroName}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="Order-label">Hero Mobile </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="Order-label">{{OrderDetails.DriverMobileNumber}}</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div><!-- end row -->
+                            </div><!-- container-fluid -->
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Pick Up Location</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.PickUpAddress}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Pick-Up Land-Mark</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.LandMark}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Pick Up Number</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.FromNumber}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Delivery Location</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.DeliveryAddress}}</label>
+                                        </div>
+                                   </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Delivery Land-Mark</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.DLandMark}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Delivery Number</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.ToNumber}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="Order-label">Customer Notes</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <label class="Order-label">{{OrderDetails.OrderDetailText}}</label>
+                                        </div>
+
+
+                                    </div>
+                               
+
+                                </div><!-- end row -->
+
+                            </div><!-- container-fluid -->
+                        </div>
+                        
+                    </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+

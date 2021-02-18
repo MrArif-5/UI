@@ -1,0 +1,117 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Sub-Admins</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="float-right d-none d-md-block">
+
+                                    <a href="AddDrivers" class="btn btn-primary waves-effect waves-light active">
+                                        Add Sub-Admins
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title mb-4">Sub-Admins List</h4>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Admin Id </label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Mobile #</label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Admin Name </label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="firstname" ng-model="CustomerOrderNo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> SrNo </th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Mobile</th>
+                        
+                                                    <!--<th scope="col">Edit</th>-->
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr dir-paginate="c in Heros | itemsPerPage:5 ">
+                                                    <th scope="row">{{$index+1}}</th>
+                                                    <td><a href="/OrderDetails/{{c.CustomerOrderId}}">{{c.CustomerOrderNo}}</a></td>
+                                                    <td>{{c.HeroName}}</td>
+                                                    <td>{{c.MobileNo}}</td>
+                                                    <td>{{c.PlateNo}}</td>
+                                                    <!--<td> <i class="fas fa-trash"></i></td>-->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="8"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

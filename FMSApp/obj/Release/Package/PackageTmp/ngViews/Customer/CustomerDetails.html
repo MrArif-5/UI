@@ -1,0 +1,160 @@
+﻿<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    input:checked + .slider {
+        background-color: #04bf68;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #04bf68;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+</style>
+
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <h4 class="page-title">Customer Order Details</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-body">
+                      
+                            <div class="row">
+                                <div class="col-md-12">
+
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ReferNumber</th>
+                                                   
+                                                   
+                                                   
+                                                    <th scope="col">CustomerOrderNo</th>
+                                                   
+                                                    <th scope="col">FromNumber</th>
+                                                    <th scope="col">ToNumber<br /></th>
+                                                    <th scope="col">CouponCode<br /></th>
+                                                    <th scope="col">Distance Order <br /></th>
+
+                                                    <th scope="col">MinPrice</th>
+                                                    <th scope="col">MaxPrice<br /></th>
+                                                    <th scope="col">ActualPrice<br /></th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr ng-repeat=" x in MyOrder.CustomerOrders">
+                                                    <th>{{MyOrder.ReferalMobileNo}}</th>
+                                                   
+                                                    <th>{{x.CustomerOrderNo}}</th>
+                                                    <th>{{x.FromNumber}}</th>
+                                                    <th>{{x.ToNumber}}</th>
+                                                    <th>{{x.CouponCode}}</th>
+                                                    <th>{{x.Distance}}</th>
+                                                    <th>{{x.MinPrice}}</th>
+                                                    <th>{{x.MaxPrice}}</th>
+                                                    <th>{{x.ActualPrice}}</th>
+
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

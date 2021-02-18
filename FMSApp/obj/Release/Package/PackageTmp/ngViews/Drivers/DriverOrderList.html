@@ -1,0 +1,145 @@
+﻿
+<div>
+    <div id="wrapper">
+
+        <div header-Direc>
+
+        </div>
+
+        <div side-Bar>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title-box">
+                        <div class="row fa-align-left">
+                            <div class="col-sm-2">
+                                <h4 class="page-title">Driver Order History</h4>
+                            </div>
+                            <div class="row"><br /><br />
+                                <div class="form-input"
+                                     moment-picker="fromdate"
+                                     format="MM/DD/YYYY">
+                                    <input class="form-control field__input"
+                                           name="fromdate"
+                                           start-view="month"
+                                           style="padding-left: 10px;"
+                                           ng-model="fromdate"
+                                           ng-model-options="{ updateOn: 'blur' }" >
+
+                                    <span class="field__label-wrap">
+                                        <span class="field__label">
+                                            <span style="color: #B51F3E;font-weight: normal;">From Date</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="form-input"
+                                     moment-picker="todate" 
+                                     format="MM/DD/YYYY">
+                                    <input class="form-control field__input"
+                                    name="todate"
+                                    start-view="month"
+                                    style="padding-left: 10px;"
+                                    ng-model="todate"
+                                    ng-model-options="{ updateOn: 'blur' }" >
+
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">
+                                            <span style="color: #B51F3E;font-weight: normal;">From Date</span>
+                                        </span>
+                                    </span>
+                                </div>
+                              
+                            </div>
+                            
+                                <div class="float-right d-none d-md-block">
+
+                                    <button type="submit"ng-click="GetOrderListByRangeDate()" class="btn btn-primary waves-effect waves-light active">
+                                      Get-Order
+                                    </button>
+
+                                </div>
+                            
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">No</th>
+                                                    <th scope="col">Order Number</th>
+                                                    <th scope="col">From Number</th>
+                                                    <th scope="col">To Number</th>
+                                                    <th scope="col">Date</th>
+
+                                                    <th scope="col">Payment</th>
+                                                    <th scope="col">Payment From</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                               
+                                                <tr dir-paginate="c in DriverOrderDetails | itemsPerPage:10 ">
+                                                    <th scope="row">{{$index+1}}</th>
+                                                    <td><a href="/OrderDetails/{{c.CustomerOrderId}}">{{c.CustomerOrderNo}}</a></td>
+                                                    <td>{{c.FromNumber}}</td>
+                                                    <td>{{c.ToNumber}}</td>
+                                                    <td>{{c.OrderDate | date:'medium'}}</td>
+                                                    <td>
+                                                        <div ng-if="c.isPaid == null">
+                                                            <a href="javasript:void(0);" ng-click="ChangeStatus(c.CustomerOrderId)">
+                                                                <b><span class="badge badge-danger">Un-Paid</span></b>
+                                                            </a>
+                                                        </div>
+                                                        <div ng-if="c.isPaid">
+                                                            <span class="badge badge-pill badge-success">Paid</span>
+
+                                                        </div>
+                                                    </td>
+                                                    <td><span class="badge badge-warning">{{c.PaymentFrom}}</span></td>
+                                                    <td><b><span class="badge badge-pill badge-danger">{{c.OrderStatusName}}</span></b></td>
+                                                </tr>
+                                            </tbody>
+                                           
+                                        </table>
+                                        <dir-pagination-controls class="pagination center" max-size="8"
+                                                                 direction-links="true"
+                                                                 boundary-links="true" style="color:black;">
+
+                                        </dir-pagination-controls>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row -->
+                </div><!-- container-fluid -->
+            </div>
+
+
+
+        </div>
+        <div footerpage>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>

@@ -1,0 +1,220 @@
+E:\Solutions\FMSWebApp\FMSApp\bin\FMSApp.dll.config
+E:\Solutions\FMSWebApp\FMSApp\bin\FMSApp.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\FMSApp.pdb
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csc.exe
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csc.exe.config
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csc.rsp
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csi.exe
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csi.exe.config
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\csi.rsp
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.AppContext.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Collections.Immutable.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Console.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.IO.Compression.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.AccessControl.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Claims.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.ValueTuple.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\vbc.exe
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\vbc.exe.config
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\vbc.rsp
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe
+E:\Solutions\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe.config
+E:\Solutions\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Solutions\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Solutions\FMSWebApp\FMSApp\obj\Debug\FMSApp.csprojResolveAssemblyReference.cache
+E:\Solutions\FMSWebApp\FMSApp\obj\Debug\FMSApp.dll
+E:\Solutions\FMSWebApp\FMSApp\obj\Debug\FMSApp.pdb
+F:\zain\FMSWebApp\FMSApp\bin\FMSApp.dll.config
+F:\zain\FMSWebApp\FMSApp\bin\FMSApp.dll
+F:\zain\FMSWebApp\FMSApp\bin\FMSApp.pdb
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csc.exe
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csc.exe.config
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csc.rsp
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csi.exe
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csi.exe.config
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\csi.rsp
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Managed.Core.targets
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.AppContext.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Collections.Immutable.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Console.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.IO.Compression.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Reflection.Metadata.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.AccessControl.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Claims.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Security.Principal.Windows.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.ValueTuple.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XmlDocument.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\vbc.exe
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\vbc.exe.config
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\vbc.rsp
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe
+F:\zain\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe.config
+F:\zain\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\zain\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\zain\FMSWebApp\FMSApp\obj\Debug\FMSApp.csprojAssemblyReference.cache
+F:\zain\FMSWebApp\FMSApp\obj\Debug\FMSApp.csproj.CoreCompileInputs.cache
+F:\zain\FMSWebApp\FMSApp\obj\Debug\FMSApp.csproj.CopyComplete
+F:\zain\FMSWebApp\FMSApp\obj\Debug\FMSApp.dll
+F:\zain\FMSWebApp\FMSApp\obj\Debug\FMSApp.pdb
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\FMSApp.dll.config
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\FMSApp.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\FMSApp.pdb
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csc.exe
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csc.exe.config
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csc.rsp
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csi.exe
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csi.exe.config
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\csi.rsp
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.AppContext.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Console.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\vbc.exe
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\vbc.exe.config
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\vbc.rsp
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\obj\Debug\FMSApp.csprojAssemblyReference.cache
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\obj\Debug\FMSApp.csproj.CoreCompileInputs.cache
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\obj\Debug\FMSApp.csproj.CopyComplete
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\obj\Debug\FMSApp.dll
+C:\Users\solut\Desktop\New folder\FMSWebApp\FMSApp\obj\Debug\FMSApp.pdb
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\FMSApp.dll.config
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\FMSApp.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\FMSApp.pdb
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csc.exe
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csc.exe.config
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csc.rsp
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csi.exe
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csi.exe.config
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\csi.rsp
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.AppContext.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Console.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\vbc.exe
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\vbc.exe.config
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\vbc.rsp
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\obj\Debug\FMSApp.csprojResolveAssemblyReference.cache
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\obj\Debug\FMSApp.dll
+C:\Users\solut\Desktop\EZY ADMIN\FMSWebApp\FMSApp\obj\Debug\FMSApp.pdb
